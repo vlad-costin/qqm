@@ -3,8 +3,7 @@ if(!require(tidyverse)){
   install.packages("tidyverse")
 }
 
-data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport.csv") %>% 
-    dplyr::rename(id=colnames(data[1]))
+data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport.csv") 
 
 
 # candidate number as seed
@@ -34,7 +33,8 @@ names(data) <- data_names[,sample(ncol(data_names), 1)]
 #random subset of rows - between 100 and 250 smaller than the whole dataset
 data_alt <- data[sample(c(1:nrow(data)), 
                     size = (nrow(data) - sample(100:250, 1))),]
-data_alt
+data_alt%>% 
+    dplyr::rename(id=colnames(data_alt[1]))
 
 # cand_no_alt <- 123
 # source("https://raw.githubusercontent.com/ra328research/qqm/main/rename_n_sample_alt.R")
