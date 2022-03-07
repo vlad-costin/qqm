@@ -3,8 +3,8 @@ if(!require(tidyverse)){
   install.packages("tidyverse")
 }
 
-data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport.csv")
-data
+data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport.csv") %>% 
+    dplyr::rename(id=colnames(data[1]))
 
 
 # candidate number as seed
