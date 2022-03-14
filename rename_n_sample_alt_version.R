@@ -3,7 +3,7 @@ if(!require(tidyverse)){
   install.packages("tidyverse")
 }
 
-data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport2.csv") 
+data <- readr::read_csv("https://raw.githubusercontent.com/vlad-costin/qqm/main/qqm2022_labreport3.csv") 
 
 # candidate number as seed
 RNGkind(sample.kind = "Rejection")
