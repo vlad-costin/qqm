@@ -9,7 +9,7 @@ data <- read_csv(url)
 
 # candidate number as seed
 RNGkind(sample.kind = "Rejection")
-set.seed(cand_no_alt)
+set.seed(cand_no_trail)
 
 # function to transform dot separation to camel format
 dot.to.camel <- function(x) {
