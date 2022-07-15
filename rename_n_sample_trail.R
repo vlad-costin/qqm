@@ -31,10 +31,10 @@ names(data) <- data_names[,sample(ncol(data_names), 1)]
 
 
 #random subset of rows - between 37 and 97 smaller than the whole dataset
-data_alt <- data[sample(c(1:nrow(data)), 
+data_trail <- data[sample(c(1:nrow(data)), 
                     size = (nrow(data) - sample(250:600, 1))),]
-data_alt
+data_trail
 
-# cand_no_alt <- 123
+# cand_no_trail <- 123
 # source("https://raw.githubusercontent.com/ra328research/qqm/main/rename_n_sample_alt.R")
 # data_alt
