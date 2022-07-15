@@ -32,7 +32,7 @@ names(data) <- data_names[,sample(ncol(data_names), 1)]
 
 #random subset of rows - between 37 and 97 smaller than the whole dataset
 data_trail <- data[sample(c(1:nrow(data)), 
-                    size = (nrow(data) - sample(250:600, 1))),]
+                    size = (nrow(data) - sample(400:800, 1))),]
 data_trail
 
 # cand_no_trail <- 123
