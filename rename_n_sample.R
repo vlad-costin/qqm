@@ -35,5 +35,5 @@ data <- data[sample(c(1:nrow(data)),
 data
 
 # cand_no <- 123
-# source("https://raw.githubusercontent.com/ra328research/qqm/main/rename_n_sample_alt.R")
-# data_alt
+# source("https://raw.githubusercontent.com/ra328research/qqm/main/rename_n_sample.R")
+# data
